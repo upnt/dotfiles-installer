@@ -13,7 +13,7 @@ jobs:
       - run:
           name: build
           command: sh installer.sh
-      - run: ls /usr/bin
+      - run: ls /usr/local/bin
       - run: echo $PATH
       - run:
           name: test
