@@ -12,7 +12,8 @@ jobs:
       - run: apk add curl
       - run:
           name: build and test
-          command: sh installer.sh && nvim --version
+          command: sh installer.sh
+      - run: ls /usr/local/bin
 
   windows:
     executor:
