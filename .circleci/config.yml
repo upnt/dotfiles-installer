@@ -6,13 +6,16 @@ orbs:
 jobs:
   linux:
     docker:
+      - shell: bash
       - image: ubuntu
     steps:
       - checkout
       - run:
-          name: build and test
+          name: build
           command: sh installer.sh
-      - run: nvim --version
+      - run: 
+          name: test
+          command: nvim --version
 
   windows:
     executor:
