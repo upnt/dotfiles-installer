@@ -11,14 +11,8 @@ jobs:
       - checkout
       - run: apk add curl
       - run:
-          name: build
-          command: sh installer.sh
-      - run: ls /usr/bin
-      - run: which curl
-      - run: echo $PATH
-      - run:
-          name: test
-          command: nvim --version
+          name: build and test
+          command: sh installer.sh && nvim --version
 
   windows:
     executor:
