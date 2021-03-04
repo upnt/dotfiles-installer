@@ -6,14 +6,14 @@ orbs:
 jobs:
   linux:
     docker:
-      - image: alpine
+      - image: ubuntu
     steps:
       - checkout
-      - run: apk add curl
+      - run: apt install curl
       - run:
           name: build and test
           command: sh installer.sh
-      - run: ls /usr/local/bin
+      - run: nvim
 
   windows:
     executor:
