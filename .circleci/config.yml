@@ -13,6 +13,8 @@ jobs:
       - run:
           name: build
           command: sh installer.sh
+      - run: ls /usr/local/bin
+      - run: echo $Path
       - run:
           name: test
           command: nvim --version
