@@ -12,7 +12,7 @@ jobs:
       - run:
           name: build and test
           command: sh installer.sh
-      - run: nvim
+      - run: nvim --version
 
   windows:
     executor:
