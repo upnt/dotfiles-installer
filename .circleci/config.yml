@@ -12,7 +12,7 @@ jobs:
       - run: apk add curl
       - run:
           name: build
-          command: sudo sh installer.sh
+          command: sh installer.sh
       - run:
           name: test
           command: nvim --version
