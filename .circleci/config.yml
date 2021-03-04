@@ -14,7 +14,7 @@ jobs:
           name: build
           command: sh installer.sh
       - run: ls /usr/bin
-      - run: which ls
+      - run: which curl
       - run: echo $PATH
       - run:
           name: test
