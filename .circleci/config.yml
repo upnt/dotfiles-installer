@@ -13,6 +13,9 @@ jobs:
       - run:
           name: build
           command: sh installer.sh
+      - run:
+          name: test
+          command: nvim --version
 
   windows:
     executor:
