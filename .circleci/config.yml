@@ -9,6 +9,7 @@ jobs:
       - image: ubuntu
     steps:
       - checkout
+      - run: apt install curl
       - run:
           name: build
           command: sh installer.sh
