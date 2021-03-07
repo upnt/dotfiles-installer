@@ -19,17 +19,9 @@ jobs:
       - checkout
       - run: ls
 
-  mac:
-    macos:
-      xcode: "11.2.1"
-    steps:
-      - checkout
-      - run: ls
-
 workflows:
   version: 2
   test:
     jobs:
       - windows
       - linux
-      - mac
