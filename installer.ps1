@@ -3,4 +3,3 @@ Expand-Archive -Path ./nvim-win64.zip -DestinationPath %UserProfile%
 $environmentPath = [System.Environment]::GetEnvironmentVariable("Path", "User")
 $environmentPath += "%UserProfile%\Neovim\bin;"
 [System.Environment]::SetEnvironmentVariable("Path", $environmentPath, "User")
-echo $Env:Path

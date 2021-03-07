@@ -20,7 +20,6 @@ jobs:
       - run:
           name: build
           command: .\installer.ps1
-      - run: echo $Env:Path
       - run:
           name: test
           command: nvim --version
