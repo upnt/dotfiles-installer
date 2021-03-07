@@ -22,7 +22,7 @@ jobs:
           command: .\installer.ps1
       - run:
           name: test
-          command: ls
+          command: nvim-qt --version
 
 workflows:
   version: 2
