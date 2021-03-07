@@ -17,17 +17,22 @@ jobs:
           name: test
           command: nvim --version
 
-  windows:
+  windows64:
     executor:
       name: win/default
       shell: powershell.exe
     steps:
       - checkout
-      - run: ls
+      - run:
+          name: build
+          command: .\installer.ps1
+      - run:
+          name: test
+          command: nvim --version
 
 workflows:
   version: 2
   test:
     jobs:
-      - windows
+      - windows64
       - linux
