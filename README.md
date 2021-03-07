@@ -1,3 +1,4 @@
+[![upnt](https://circleci.com/gh/upnt/neovim-setup.svg?style=svg)](https://circleci.com/gh/upnt/neovim-setup)
 # neovim setup
 
 # feature
