@@ -9,7 +9,10 @@ jobs:
       - image: alpine
     steps:
       - checkout
-      - run: ls
+      - run: apk add curl
+      - run:
+          name: build
+          command: sh installer.sh
 
   windows:
     executor:
