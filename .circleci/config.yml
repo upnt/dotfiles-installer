@@ -22,7 +22,8 @@ jobs:
           command: .\installer.ps1
       - run:
           name: test
-          command: nvim-qt --version
+          command: ls %UserProfile%
+      - run: ls %UserProfile%/Neovim
 
 workflows:
   version: 2
