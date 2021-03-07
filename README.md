@@ -11,5 +11,19 @@
 # plugins
 
 # Quick start
-For Unix/Linux or Mac OS X
-For Windows
+For Unix/Linux
+```bash
+sudo sh installer.sh
+nvim --version
+```
+For Windows in Powershell
+```powershell
+.\installer.ps1
+nvim-qt --version
+```
+
+For Windows in Command Prompt
+```powershell
+powershell installer.ps1
+nvim-qt --version
+```
