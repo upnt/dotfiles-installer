@@ -22,8 +22,8 @@ jobs:
           command: .\installer.ps1
       - run:
           name: test
-          command: ls %UserProfile%
-      - run: ls %UserProfile%/Neovim
+          command: ls %UserProfile%/Neovim/bin
+      - run: nvim --version
 
 workflows:
   version: 2
