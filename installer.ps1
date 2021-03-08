@@ -6,10 +6,12 @@ Expand-Archive -Path tmp/nvim-win64.zip -DestinationPath $Env:UserProfile/nvim-w
 Invoke-WebRequest https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.ps1 -OutFile tmp/installer.ps1
 
 $path = $Env:UserProfile + "\nvim-win64\Neovim\bin;"
+echo $path
 if ( -not ( Test-Path -Path $path ) ) {
 	$environmentPath = [System.Environment]::GetEnvironmentVariable("Path", "User")
 	$environmentPath = $path + $environmentPath
 	[System.Environment]::SetEnvironmentVariable("Path", $environmentPath, "User")
+	echo $environmentPath
 }
 ./tmp/installer.ps1 ~/.cache/dein
 
