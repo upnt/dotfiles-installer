@@ -32,9 +32,9 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: build
-        run: powershell -f installer.ps1 -Verb RunAs
+        run: .\installer.ps1
         
       - name: set path
         run: $Env:Path = "C:\Users\runneradmin\nvim-win64\Neovim\bin;" + $Env:Path
       - name: test
-        run: powershell nvim --version
+        run: nvim --version
