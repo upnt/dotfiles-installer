@@ -1,5 +1,4 @@
 # neovim setup
-[![upnt](https://circleci.com/gh/upnt/neovim-setup.svg?style?style=flat&logo=appveyor)](https://circleci.com/gh/upnt/neovim-setup)
 
 # feature
 
