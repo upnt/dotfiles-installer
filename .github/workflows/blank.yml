@@ -34,7 +34,7 @@ jobs:
       - name: build
         run: powershell -f installer.ps1 -Verb RunAs
         
-      - name: echo
-        run: echo $Env:Path
+      - name: set path
+        run: $Env:Path = "C:\Users\runneradmin\nvim-win64\Neovim\bin;" + $Env:Path
       - name: test
         run: powershell nvim --version
