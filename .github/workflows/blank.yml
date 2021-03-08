@@ -34,5 +34,9 @@ jobs:
       - name: build
         run: .\installer.ps1
         
+      - name: echo
+        run: echo [System.Environment]::GetEnvironmentVariable("Path","User")
+      - name: restart
+        run: $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
       - name: test
         run: powershell nvim --version
