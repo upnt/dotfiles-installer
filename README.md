@@ -4,7 +4,7 @@
 # feature
 
 - [x] setup neovim
-- [ ] setup dein.vim
+- [x] setup dein.vim
 - [ ] setup neovim builtin lsp
 - [ ] and add some plugins
 
