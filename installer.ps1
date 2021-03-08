@@ -10,7 +10,6 @@ if ( -not ( Test-Path -Path $path ) ) {
 	$environmentPath = [System.Environment]::GetEnvironmentVariable("Path", "User")
 	$environmentPath = $path + $environmentPath
 	[System.Environment]::SetEnvironmentVariable("Path", $environmentPath, "User")
-	$Env:Path = $path + $Env:Path
 }
 ./tmp/installer.ps1 ~/.cache/dein
 
