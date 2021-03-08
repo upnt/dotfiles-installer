@@ -13,17 +13,18 @@
 # Quick start
 For Unix/Linux
 ```bash
+sudo apt update && sudo apt install curl
 sudo sh installer.sh
-nvim --version
+nvim
 ```
 For Windows in Powershell
 ```powershell
 .\installer.ps1
-nvim-qt --version
+nvim-qt
 ```
 
 For Windows in Command Prompt
 ```powershell
 powershell installer.ps1
-nvim-qt --version
+nvim-qt
 ```
