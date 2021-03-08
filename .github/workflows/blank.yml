@@ -35,4 +35,4 @@ jobs:
         run: .\installer.ps1
         
       - name: test
-        run: nvim --version
+        run: powershell nvim --version
