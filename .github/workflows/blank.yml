@@ -34,7 +34,5 @@ jobs:
       - name: build
         run: .\installer.ps1
         
-      - name: set path
-        run: $Env:Path = "C:\Users\runneradmin\nvim-win64\Neovim\bin;" + $Env:Path
       - name: test
-        run: nvim --version
+        run: $Env:Path = "C:\Users\runneradmin\nvim-win64\Neovim\bin;" + $Env:Path && nvim --version
