@@ -1,0 +1,45 @@
+[[plugins]]
+repo = "neovim/nvim-lsp"
+
+[[plugins]]
+repo = "neovim/nvim-lspconfig"
+
+[[plugins]]
+repo = "anott03/nvim-lspinstall"
+
+[[plugins]]
+repo = "liuchengxu/vista.vim"
+hook_add = '''
+    let g:vista_sidebar_width = 30
+    let g:vista_echo_cursor = 0
+    let g:vista_default_executive = 'nvim_lsp'
+    nnoremap <silent><Leader>v :Vista!!<CR>
+'''
+
+# complete
+[[plugins]]
+repo = "Shougo/deoplete.nvim"
+lazy = 1
+on_i = 1
+depends = ['deoplete-lsp']
+hook_source = '''
+    let g:deoplete#enable_at_startup = 1
+    call deoplete#custom#option({
+        \ 'auto_complete': v:true,
+        \ 'min_pattern_length': 2,
+        \ 'auto_complete_delay': 0,
+        \ 'auto_refresh_delay': 20,
+        \ 'refresh_always': v:true,
+        \ 'smart_case': v:true,
+        \ 'camel_case': v:true,
+        \ 'ignore_case': v:false,
+        \ })
+'''
+
+[[plugins]]
+repo = "deoplete-plugins/deoplete-lsp"
+lazy = 1
+on_i = 1
+hook_add = '''
+let g:deoplete#lsp#handler_enabled = v:false
+'''
