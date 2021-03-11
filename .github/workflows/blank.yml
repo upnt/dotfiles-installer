@@ -33,6 +33,9 @@ jobs:
 
       - name: build
         run: .\installer.ps1
+
+      - name: ls
+        run: ls $Env:UserProfile/AppData/Local
         
       - name: test
         run: C:\Users\runneradmin\nvim-win64\Neovim\bin\nvim --version
