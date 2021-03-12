@@ -19,7 +19,7 @@ nvim
 ```
 For Windows in Powershell
 ```powershell
-.\installer.ps1
+.\installer.ps1 -SettingPath
 nvim-qt
 ```
 
