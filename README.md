@@ -4,8 +4,8 @@
 
 - [x] setup neovim
 - [x] setup dein.vim
-- [ ] setup neovim builtin lsp
-- [ ] and add some plugins
+- [x] setup neovim builtin lsp
+- [x] and add some plugins
 - [ ] pass checkhealth
 
 # plugins

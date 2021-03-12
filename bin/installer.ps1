@@ -23,7 +23,15 @@ else {
     Write-Output "dein.vim has already installed"
 }
 
-# install 
+# install some plugins(include builtin lsp)
+if ( -not ( Test-Path -Path $userprofile/AppData/Local/nvim ) ) {
+    $ConfigDir = (New-Item $userprofile/AppData/Local/nvim -ItemType Directory).FullName
+    git clone https://github.com/upnt/neovim-config $ConfigDir
+
+}
+else {
+    Write-Output "You have already use config files for neovim"
+}
 
 # setting path
 if ( $SettingPath ) {
