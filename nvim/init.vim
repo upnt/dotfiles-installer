@@ -57,7 +57,7 @@ set smartindent
 colorscheme desert
 
 if has('persistent_undo')
-	let undo_path = expand('~/AppData/Local/nvim/undo')
+	let undo_path = expand('~/.cache/undo')
 	exe 'set undodir=' .. undo_path
 	set undofile
 endif
