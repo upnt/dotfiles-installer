@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: build
-        run: sudo sh installer.sh
+        run: sudo sh bin/installer.sh
         
       - name: test
         run: nvim --version
@@ -32,7 +32,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: build
-        run: .\installer.ps1
+        run: .\bin\installer.ps1
 
       - name: ls
         run: ls $Env:UserProfile/AppData/Local

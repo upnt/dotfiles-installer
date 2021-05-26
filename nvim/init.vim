@@ -1,7 +1,3 @@
-let g:python_host_prog='C:\Users\shun-\anaconda3\envs\pynvim2\python.exe'
-let g:python3_host_prog='C:\Users\shun-\anaconda3\envs\pynvim3\python.exe'
-
-
 "dein Scripts-----------------------------
 if &compatible
     set nocompatible               " Be iMproved
