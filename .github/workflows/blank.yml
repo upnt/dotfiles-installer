@@ -38,4 +38,4 @@ jobs:
         run: ls $Env:UserProfile/AppData/Local
         
       - name: test
-        run: C:\Users\runneradmin\nvim-win64\Neovim\bin\nvim --version
+        run: nvim --version
