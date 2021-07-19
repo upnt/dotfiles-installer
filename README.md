@@ -17,14 +17,14 @@ sudo apt update && sudo apt install curl
 sudo sh installer.sh
 nvim
 ```
-For Windows in Powershell
+For Windows in Powershell(using scoop)
 ```powershell
-.\installer.ps1 -SettingPath
-nvim-qt
+.\installer.ps1
+nvim
 ```
 
 For Windows in Command Prompt
-```powershell
+```cmd
 powershell installer.ps1
-nvim-qt
+nvim
 ```
