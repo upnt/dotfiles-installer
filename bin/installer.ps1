@@ -19,6 +19,7 @@ scoop install anaconda3
 scoop install nodejs-lts
 scoop install perl
 scoop install ruby
+scoop install msys2
 scoop install yarn
 scoop install cmake
 scoop install make
