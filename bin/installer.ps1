@@ -20,6 +20,8 @@ scoop install nodejs-lts
 scoop install perl
 scoop install ruby
 scoop install yarn
+scoop install cmake
+scoop install make
 
 # install dein.vim
 if ( -not ( Test-Path -Path $userprofile/.cache/dein ) ) {
