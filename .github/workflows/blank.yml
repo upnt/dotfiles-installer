@@ -36,6 +36,3 @@ jobs:
 
       - name: ls
         run: ls $Env:UserProfile/AppData/Local
-        
-      - name: test
-        run: C:\Users\runneradmin\scoop\apps\neovim\current\bin\nvim.exe --version
