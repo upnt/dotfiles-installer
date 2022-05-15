@@ -22,9 +22,3 @@ For Windows in Powershell(using scoop)
 .\installer.ps1
 nvim
 ```
-
-For Windows in Command Prompt
-```cmd
-powershell installer.ps1
-nvim
-```
