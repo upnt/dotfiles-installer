@@ -1,4 +1,4 @@
-# neovim setup
+# dotfiles setup
 [![CI](https://github.com/upnt/neovim-setup/actions/workflows/blank.yml/badge.svg?branch=main)](https://github.com/upnt/neovim-setup/actions/workflows/blank.yml)
 # feature
 
