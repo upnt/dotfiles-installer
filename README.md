@@ -17,8 +17,3 @@ sudo apt update && sudo apt install curl
 sudo sh installer.sh
 nvim
 ```
-For Windows in Powershell(using scoop)
-```powershell
-.\installer.ps1
-nvim
-```
