@@ -1,19 +1,18 @@
-# dotfiles setup
+# dotfiles installer
 [![CI](https://github.com/upnt/neovim-setup/actions/workflows/blank.yml/badge.svg?branch=main)](https://github.com/upnt/neovim-setup/actions/workflows/blank.yml)
-# feature
 
-- [x] setup neovim
-- [x] setup dein.vim
-- [x] setup neovim builtin lsp
-- [x] and add some plugins
-- [ ] pass checkhealth
+This repository allows us to install settings for some useful applications such as vim, neovim and so on.
+For more information on settings, please check [my dotfiles](https://github.com/upnt/dotfiles.git).
 
-# plugins
+# Feature
+- [ ] install small vim configuration
+- [x] install neovim configuration
+- [x] install dein.vim
+- [ ] install bash profile
 
 # Quick start
 For Unix/Linux
 ```bash
 sudo apt update && sudo apt install curl
 sudo sh installer.sh
-nvim
 ```
