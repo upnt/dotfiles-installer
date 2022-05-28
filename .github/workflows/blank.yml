@@ -25,14 +25,3 @@ jobs:
         
       - name: test
         run: nvim --version
-        
-  windows-test:
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: build
-        run: .\bin\installer.ps1
-
-      - name: ls
-        run: ls $Env:UserProfile/AppData/Local
