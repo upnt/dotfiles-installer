@@ -5,14 +5,16 @@ This repository allows us to install settings for some useful applications such 
 For more information on settings, please check [my dotfiles](https://github.com/upnt/dotfiles.git).
 
 # Feature
-- [ ] install small vim configuration
+- [x] install small vim configuration
 - [x] install neovim configuration
 - [x] install dein.vim
-- [ ] install bash profile
+- [x] install deno
+- [x] install bash profile
+- [x] install powershell profile
 
 # Quick start
 For Unix/Linux
 ```bash
-sudo apt update && sudo apt install curl
-sudo sh installer.sh
+sudo apt update && sudo apt install curl unzip git
+./installer.sh
 ```
