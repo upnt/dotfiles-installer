@@ -27,6 +27,7 @@ jobs:
         run: |
             wget https://github.com/PowerShell/PowerShell/releases/download/v7.2.4/powershell-lts_7.2.4-1.deb_amd64.deb
             wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb
+            sudo apt-get autoremove
             sudo apt-get install ./nvim-linux64.deb
             sudo apt-get install ./powershell-lts_7.2.4-1.deb_amd64.deb
 
