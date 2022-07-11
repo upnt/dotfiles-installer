@@ -12,14 +12,18 @@ in_array() {
 	return 1
 }
 
-echo "1: vim config"
-echo "2: neovim config"
-echo "3: dein"
-echo "4: deno"
-echo "5: bash"
-echo "6: powershell"
-echo -n "Chouse installation(ex. 2,3,4,5): "
-IFS="," read -a arr
+if [[ $# = 0 ]]; then
+    echo "1: vim config"
+    echo "2: neovim config"
+    echo "3: dein"
+    echo "4: deno"
+    echo "5: bash"
+    echo "6: powershell"
+    echo -n "Chouse installation(ex. 2,3,4,5): "
+    IFS="," read -a arr
+else
+    arr=$@
+fi
 
 if [[ ${#arr[@]} = 0 ]]; then
 	exit 0
