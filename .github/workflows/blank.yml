@@ -20,11 +20,17 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: dependences
-        run: sudo apt install curl git unzip
+      - name: install dependences
+        run: sudo apt update && sudo apt install curl git unzip
+
+      - name: install apps
+        run: |
+            wget https://github.com/PowerShell/PowerShell/releases/download/v7.2.4/powershell-lts_7.2.4-1.deb_amd64.deb
+            wget https://github.com/neovim/neovim/releases/download/v0.7.2/nvim-linux64.deb
+            sudo apt install ./nvim-linux64.deb ./powershell-lts_7.2.4-1.deb_amd64.deb
 
       - name: build
-        run: ./bin/installer.sh 1 2 3 4 5 6
+        run: PROFILE=/home/upnt/.config/powershell/Microsoft.PowerShell_profile.ps1 ./bin/installer.sh 1 2 3 4 5 6
         
       - name: test
         run: nvim --version
