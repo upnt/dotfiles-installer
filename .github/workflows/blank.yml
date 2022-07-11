@@ -20,8 +20,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: dependences
+        run: sudo apt install curl git unzip
+
       - name: build
-        run: ./bin/installer.sh
+        run: ./bin/installer.sh 1 2 3 4 5 6
         
       - name: test
         run: nvim --version
